@@ -22,7 +22,6 @@ class CommonDialog : BaseDialog() {
     /* 动态添加View **/
     var contentView: View? = null
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

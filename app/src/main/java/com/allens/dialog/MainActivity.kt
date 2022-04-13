@@ -14,21 +14,33 @@ class MainActivity : SampleAct() {
     override fun onCreate() {
         addClick("自定义Dialog xml 布局") {
             CommonDialog().apply {
+                /* 设置Dialog圆角 **/
                 radius = 40f
+                /* 点击屏幕dialog不消失 **/
                 canceledOnTouchOutside = true
+                /* 点击物理返回键dialog不消失 **/
                 cancelable = true
+                /* 布局ID **/
                 layout = R.layout.dialog_custom
+                /* 寻找布局 **/
                 viewCreate = { view, dialog ->
                     view.findViewById<TextView>(R.id.text).text = "Allens"
                 }
+                /* 宽度比例 **/
                 widthScale = 0.5f
+                /* 高度比例 **/
                 heightScale = 0.5f
+                /* 设置透明度 **/
                 alpha = 0.5f
+                /* 设置黑暗度（Dialog 窗口背景的黑暗度） **/
                 dimAmount = 0.7f
+                /* target **/
                 target = ""
+                /* 返回 **/
                 back = {
                     Toast.makeText(this@MainActivity, "back", Toast.LENGTH_SHORT).show()
                 }
+                /* 位置 **/
                 gravity = Gravity.CENTER
             }.show(this)
         }
@@ -36,14 +48,15 @@ class MainActivity : SampleAct() {
         addClick("自定义Dialog 动态添加View") {
             CommonDialog().apply {
                 radius = 40f
+                /* 动态添加View **/
                 contentView = TextView(this@MainActivity).apply {
                     text = "动态添加view"
                     setBackgroundColor(Color.RED)
                 }
+                /* 高度 **/
                 height = 300
+                /* 宽度 **/
                 width = 600
-                target = ""
-                gravity = Gravity.TOP
             }.show(this)
         }
 
