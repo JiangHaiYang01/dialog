@@ -93,7 +93,6 @@ class SweetDialog : BaseDialog() {
      */
     private fun setSweetDefault() {
         gravity = Gravity.BOTTOM
-        widthScale = 0.8f
         setWindowAnimations(R.style.SheetDialogAnimation)
     }
 

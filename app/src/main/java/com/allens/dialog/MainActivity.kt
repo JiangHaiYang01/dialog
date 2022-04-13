@@ -63,8 +63,8 @@ class MainActivity : SampleAct() {
                 itemRadius = 25f
                 /* 是否显示分割线 **/
                 showLine = true
-
-                widthScale = 1.0f
+                /* 宽度比例 **/
+                widthScale = 0.8f
                 /* Item 分割线自定义 **/
                 line = { context ->
                     View(context).apply {
