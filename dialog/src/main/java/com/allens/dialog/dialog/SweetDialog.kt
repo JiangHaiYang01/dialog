@@ -96,7 +96,6 @@ class SweetDialog : BaseDialog() {
         setWindowAnimations(R.style.SheetDialogAnimation)
     }
 
-
     fun addCancel(
         info: String,
         textSize: Float = itemTextSize,

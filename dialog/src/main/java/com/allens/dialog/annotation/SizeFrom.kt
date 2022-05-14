@@ -13,7 +13,6 @@ import androidx.annotation.IntDef
 @IntDef(SizeFrom.SCALE, SizeFrom.SPECIFY)
 internal annotation class SizeFrom {
     companion object {
-
         /**
          * 比例
          */

@@ -183,5 +183,4 @@ abstract class BaseDialog : DialogFragment() {
             else -> ViewGroup.LayoutParams.WRAP_CONTENT
         }
     }
-
 }
